@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<title>Dice</title>
+	</head>
+	<body>
+	<button onClick = "diceRoll()" >Roll the dice</button>
+	
+	
+	
+	
+	<a>You</a> <a id = "double"></a> <a>rolled a double</a>
+	
+	<script>
+	
+	
+	
+	
+	
+		
+		
+		function diceRoll() {
+		var dice1 = Math.floor((Math.random() * 6) + 1);
+		var dice2 = Math.floor((Math.random() * 6) + 1);
+		
+		if (dice1==dice2){
+			
+			document.getElementById ("double").innerHTML = "did";
+			} else {
+				document.getElementById ("double").innerHTML = "did not";
+			}
+		}
+	
+	
+	
+	
+	</script>
+	</body>
+</html>
